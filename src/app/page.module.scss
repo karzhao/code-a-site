@@ -28,6 +28,8 @@
   justify-content: center;
   padding: 120px 60px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -35,6 +37,7 @@
   position: absolute;
   inset: 0;
   background: url("/bg/hero-bg.svg") center bottom / cover no-repeat;
+  pointer-events: none;
   z-index: 0;
 }
 
