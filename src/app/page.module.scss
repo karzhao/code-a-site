@@ -26,9 +26,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--foreground);
   padding: 120px 60px;
   text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/bg/hero-bg.svg") center bottom / cover no-repeat;
+  z-index: 0;
 }
 
 .intro {
@@ -39,7 +46,8 @@
   width: 100%;
   max-width: 960px;
   font-family: var(--font-bungee);
-  
+  position: relative;
+  z-index: 1;
 
   h1 {
     font-size: 40px;
