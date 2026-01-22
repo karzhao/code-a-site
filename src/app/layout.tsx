@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const bungee = localFont({
+  src: [{ path: "../../public/fonts/BungeeInline-Regular.ttf", weight: "400", style: "normal" }],
+  variable: "--font-bungee",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const tilt = localFont({
+  src: [{ path: "../../public/fonts/TiltPrism-Regular-VariableFont.ttf", weight: "400", style: "normal" }],
+  variable: "--font-tilt",
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${bungee.variable} ${tilt.variable}`}>
         {children}
       </body>
     </html>
