@@ -1,5 +1,5 @@
 .page {
-  --background: #fafafa;
+  --background: #e7f8fd;
   --foreground: #fff;
 
   --text-primary: #0B1F3B;
@@ -17,6 +17,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.prose {
+  max-width: 50vw !important;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  color: var(--text-primary);
 }
 
 .hero {
@@ -50,7 +58,7 @@
   max-width: 960px;
   font-family: var(--font-bungee);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   h1 {
     font-size: 40px;
@@ -110,7 +118,7 @@
   }
 }
 
-.aboutSection {
+.sections {
   background-color: var(--light-blue);
   background-image: url('/bg/bg-water.png');
   background-size: 100% auto;
@@ -119,6 +127,7 @@
   width: 100%;
   min-height: 100vh;
 }
+
 
 a.primary {
   background: var(--text-primary);
@@ -152,5 +161,17 @@ a.secondary {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -1.92px;
+  }
+
+  .capybara {
+    bottom: 12%;
+    width: clamp(96px, 22vw, 160px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .capybara {
+    animation: none;
+    transform: translate(-50%, 0) rotate(0deg);
   }
 }

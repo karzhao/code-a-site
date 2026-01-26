@@ -23,26 +23,26 @@ export default function Home() {
           </div>
         </section>
 
-
-        <section className={styles.aboutSection}>
+        <div className={styles.sections}>
           <pre className="heading">About!</pre>
-        </section>
+          <div className={styles.prose}>
+            <p>
+              Code-A-Site is a hackathon. We're looking for coders. It'll be in-person. 
+              We'll have workshops, free food, and prizes.
+            </p>
+            <p>
+              Code-A-Site is run by Web Development Club.
+            </p>
+          </div>
 
-        <section className={styles.prizesSection}>
           <pre className="heading">Prizes!</pre>
-        </section>
 
-        <section className={styles.scheduleSection}>
           <pre className="heading">Schedule!</pre>
-        </section>
 
-        <section className={styles.questionsSection}>
           <pre className="heading">Questions!</pre>
-        </section>
 
-        <section className={styles.signUpSection}>
           <pre className="heading">Sign Up!</pre>
-        </section>
+        </div>
 
       </main>
     </div>

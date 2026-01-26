@@ -38,9 +38,19 @@ a {
   text-align: center;
   width: 90vw;
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 65px;
+  line-height: 1.8;
   color: var(--orange);
   background: transparent;
   padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
